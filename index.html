@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<title>Dice</title>
+		
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script type="text/javascript" src="mustache/mustache.js" ></script>
+		
+		<!--[if lt IE 9]>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('section');
+				document.createElement('article');
+				document.createElement('aside');
+				document.createElement('footer');
+				document.createElement('figure');
+				document.createElement('hgroup');
+				document.createElement('menu');
+			</script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<div id="myApp" class="myApp"></div>
+
+		<script id="startTemplate" type="text/template">
+			<div id="myDiceApp" class="myDiceApp">
+				<div class="num">
+					<p>Great, you get<span id="showSum"> _ </span>points</p>
+				</div>
+				<div class="dicePlace"></div>
+				<input class="diceNum" type="text" placeholder="number of dice ( from 1 to 8 )" value="">
+				<button class="startGame btn" data-action="startGame">Start Game</button>
+			</div>
+		</script>
+
+		<script id="diceTemplate" type="text/template">
+				<div class="question">?</div>
+		</script>
+
+		<script id="dicePointTemplate" type="text/template">
+				<li><span></span></li>
+		</script>
+
+		<script id="diceNavTemplate" type="text/template">
+			<button class="rollDice btn" data-action="rollDice">Roll Dice</button>
+		</script>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

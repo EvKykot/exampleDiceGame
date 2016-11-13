@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,700,300);
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  color: rgba(10,10,10,1);
+  background-color: #fff;
+}
+.myDiceApp {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 350px;
+  max-width: 700px;
+  height: auto;
+  background-color: rgba(250,250,250,1);
+  padding: 5%;
+  border: 1px solid #000;
+  text-align: center;
+  vertical-align: middle;
+}
+.diceBox {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 15px 5px;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(150,150,150,1);
+  padding: 0;
+  letter-spacing: 0;
+  font-size: 0;
+  word-spacing: 0;
+}
+.diceBox>li {
+  width: 33%;
+  height: 45%;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.diceBox>li>span,
+.question {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+}
+.diceBox>li>span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.question {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+.btn {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid rgba(50,50,50,0.3);
+  border-radius: 3px;
+}
+.diceNum {
+  text-align: center;
+  margin: 15px auto;
+}
